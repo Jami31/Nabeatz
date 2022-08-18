@@ -16,7 +16,9 @@ const GUILD_ID = "953938385163124736"
 const client = new Discord.Client({
     intents: [
         "GUILDS",
-        "GUILD_VOICE_STATES"
+        "GUILD_MESSAGES",
+        "GUILD_VOICE_STATES",
+        "GUILD_MEMBERS"
     ]
 })
 
