@@ -14,14 +14,14 @@ const LOAD_SLASH = process.argv[2] == "load"
 const CLIENT_ID = "1009845779118174271"
 const GUILD_ID = "953938385163124736"
 
-const client = new Client({
+const client = new Discord.Client({
     intents: [
       GatewayIntentBits.Guilds,
       GatewayIntentBits.GuildVoiceStates,
     ],
 })
 
-client.slashcommands = new Client.Collection()
+client.slashcommands = new Discord.Collection()
 client.player = new Player(client, {
     ytdlOptions: {
         quality: "highestaudio",
