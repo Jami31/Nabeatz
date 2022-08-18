@@ -21,7 +21,7 @@ const client = new Client({
     ],
 })
 
-client.slashcommands = new Discord.Collection()
+client.slashcommands = new Client.Collection()
 client.player = new Player(client, {
     ytdlOptions: {
         quality: "highestaudio",
