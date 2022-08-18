@@ -15,9 +15,9 @@ const GUILD_ID = "953938385163124736"
 
 const client = new Discord.Client({
     intents: [
-        "GUILDS",
-        "GUILD_VOICE_STATES"
-    ]
+      GatewayIntentBits.Guilds,
+      GatewayIntentBits.GuildVoiceStates,
+    ],
 })
 
 client.slashcommands = new Discord.Collection()
